@@ -2,9 +2,9 @@
  A fork of HikariObfuscator [WIP]
  [https://github.com/HikariObfuscator/Hikari](https://github.com/HikariObfuscator/Hikari)
 
-# 使用
+# Usage
 
-编译
+Build
 ```
 cd Hikari-LLVM
 mkdir build
