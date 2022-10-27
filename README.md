@@ -4,13 +4,24 @@
  ## 原项目链接
  [https://github.com/HikariObfuscator/Hikari](https://github.com/HikariObfuscator/Hikari)
 
-## 使用
+# 使用
 
-下载后编译
+编译
+```
+cd Hikari-LLVM
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_CREATE_XCODE_TOOLCHAIN=ON  -DLLVM_ENABLE_PROJECTS="clang" ../llvm
+
+make -j8
+
+// toolcchains
+sudo make install-xcode-toolchain
+```
 
 ### Swift混淆支持
 
-编译Swift Toolchain的时间非常长。可以使用[Hanabi](https://github.com/NeHyci/Hanabi)
+编译Swift Toolchain的时间非常长。可以使用[Hanabi](https://github.com/dbmz502/Hanabi)
 
 需要注意的是添加混淆参数的位置是在**Swift Compiler - Other Flags**中的**Other Swift Flags**，并且是在前面加-Xllvm，而不是-mllvm。
 关闭优化的地方在**Swift Compiler - Code Generation**中的**Optimization Level**，设置为 *No Optimization [-Onone]*
