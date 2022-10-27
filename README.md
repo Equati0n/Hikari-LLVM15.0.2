@@ -1,7 +1,5 @@
 # Hikari-LLVM15
  A fork of HikariObfuscator [WIP]
- 
- ## 原项目链接
  [https://github.com/HikariObfuscator/Hikari](https://github.com/HikariObfuscator/Hikari)
 
 # 使用
